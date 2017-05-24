@@ -21,8 +21,7 @@ set -o nounset                              # Treat unset variables as an error
 
 mkdir -p $HOME/.compile/
 mkdir -p $HOME/.install-compiled/emacs
-
-sudo apt-get install texinfo
+sudo apt-get build-dep emacs24
 git clone https://github.com/emacs-mirror/emacs $HOME/.compile/emacs
 cd $HOME/.compile/emacs
 ./configure --prefix=$HOME/.install-compiled/emacs
