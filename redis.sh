@@ -19,8 +19,8 @@
 
 set -o nounset                              # Treat unset variables as an error
 
-GIT_DIR=$HOME/.compile
-DIR_INSTALL=$HOME/.install-compiled/redis
+GIT_DIR=$HOME/.source
+DIR_INSTALL=$HOME/.bin
 
 git clone https://github.com/antirez/redis $GIT_DIR/redis
 cd $GIT_DIR/redis

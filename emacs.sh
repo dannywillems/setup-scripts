@@ -19,11 +19,11 @@
 
 set -o nounset                              # Treat unset variables as an error
 
-mkdir -p $HOME/.compile/
-mkdir -p $HOME/.install-compiled/emacs
+mkdir -p $HOME/.source/
+mkdir -p $HOME/.bin
 sudo apt-get build-dep emacs24
-git clone https://github.com/emacs-mirror/emacs $HOME/.compile/emacs
-cd $HOME/.compile/emacs
-./configure --prefix=$HOME/.install-compiled/emacs
+git clone https://github.com/emacs-mirror/emacs $HOME/.source/emacs
+cd $HOME/.source/emacs
+./configure --prefix=$HOME/.bin/emacs
 make -j 8
 make install
