@@ -19,7 +19,7 @@
 
 set -o nounset                              # Treat unset variables as an error
 
-mkdir -p $HOME/.compile/
+mkdir -p $HOME/.source/
 mkdir -p $HOME/.bin
 
 sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext \
