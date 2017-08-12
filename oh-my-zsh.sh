@@ -1,4 +1,4 @@
-OH_MY_ZSH_GIT_PARENT_DIRECTORY=GitLab/Personal
+OH_MY_ZSH_GIT_PARENT_DIRECTORY=~/.codes/GitLab/Personal
 GIT_DIR_NAME=my-zsh-plugins
 GIT_REPO=git@gitlab.com:dannywillems/my-zsh-plugins.git
 
