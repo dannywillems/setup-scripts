@@ -1,3 +1,3 @@
 # GitLab initialization.
 
-mkdir -p ~/GitLab/Personal
+mkdir -p ~/codes/GitLab/Personal

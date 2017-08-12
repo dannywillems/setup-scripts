@@ -1,3 +1,3 @@
 # Initialization of GitHub directory
 
-mkdir -p ~/GitHub/Personal
+mkdir -p ~/codes/GitHub/Personal
