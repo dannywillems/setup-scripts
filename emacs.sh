@@ -19,9 +19,11 @@
 
 set -o nounset                              # Treat unset variables as an error
 
+# install source code pro too.
 mkdir -p $HOME/.source/
 mkdir -p $HOME/.bin
 sudo apt-get build-dep emacs24
+sudo apt-get install fonts-powerline
 git clone https://github.com/emacs-mirror/emacs $HOME/.source/emacs
 cd $HOME/.source/emacs
 ./configure --prefix=$HOME/.bin/emacs
