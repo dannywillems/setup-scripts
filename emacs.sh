@@ -26,6 +26,21 @@ sudo apt-get build-dep emacs24
 sudo apt-get install fonts-powerline
 git clone https://github.com/emacs-mirror/emacs $HOME/.source/emacs
 cd $HOME/.source/emacs
-./configure --prefix=$HOME/.bin/emacs
-make -j 8
+./configure --prefix=$HOME/.bin/emacs \
+    --with-native-compilation=aot \
+    --with-tree-sitter \
+    --with-gif \
+    --with-png \
+    --with-jpeg \
+    --with-rsvg \
+    --with-tiff \
+    --with-xft \
+    --with-modules \
+    --with-xml2 \
+    --with-pgtk \
+    --with-imagemagick \
+    --with-dbus \
+    --with-xpm \
+    --with-x-toolkit=gtk3
+make -j 32
 make install
